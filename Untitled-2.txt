@@ -1,0 +1,21 @@
+
+package com.Dmart;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+public class MyContoller {
+	@RequestMapping("/")
+public String mart() {
+		return "bill";
+		//logics..parameters...return statements.
+	
+	}
+	@RequestMapping("/req1")
+	public String mart1(@RequestParam int id, @RequestParam) {
+		
+
+		return "result";
+	}
